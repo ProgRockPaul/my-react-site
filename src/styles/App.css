@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  animation: AnimationName 2.4s ease;
+}
+
+.box {
+  height:auto;
+  color: #76c3ae;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1vh;
+  border: 2px solid black;
+  background-image: url('http://static.panoramio.com/photos/large/16388086.jpg');
+  background-size: 400% 400%;
+  justify-content: space-around;
+}
+@keyframes AnimationName {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+
+.box h1 {
+  font-size: 6vh;
+  margin: 0;
+}
+
+.box h2 {
+  font-size: 5vh; font-family: "Courier New", Courier, sans-serif;
+  margin-top: 0;
+  margin: 0;
+  margin-bottom: auto;
+}
+
+p {
+  font-family: "Courier New", Courier; font-size: 2vw; margin-bottom: 15px; color: #abd4;
+  margin: 0;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("https://guidetoiceland.is/image/166900/x/0/northern-lights-mountain-camping-tour-2.jpg");
+
+    /* Full height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("http://www.68north.com/content/2014/04/friday-photo-65-northern-lights-1030x686.jpg");
+
+    /* Full height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2014/08/18/424347/458a001bc9963b1ec628f84693c07305.jpg");
+
+    /* Full height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url("https://chrismartinphotography.files.wordpress.com/2014/02/elbow-river-aurora-c2a9-christopher-martin-681446.jpg");
+
+    /* Full height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 .parallax2 .parallax3 .parallax4 {
+  vertical-align: top;
+  opacity: 1;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+
+}
+
+
+.navBar {
+  margin: 0 auto;
+  width: 100%;
+}
+.headline {
+  animation: Wobble 3s ease infinite;
+}
+
+@keyframes Wobble {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.navBar ul {
+  margin: 0 auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+  text-align: center;
+}
+
+.navBar li{
+  display: flex;
+
+  flex: 1 1 0;
+  justify-content: center;
+}
+
+.navBar li a {
+    font-size: 16px;
+    display: flex;
+    color: #76c3ae;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    background-color: #111;
+}
